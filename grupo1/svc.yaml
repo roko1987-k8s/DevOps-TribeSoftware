@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mario
+  namespace: app1
+spec:
+  selector:
+    app: mario
+  ports:
+    - port: 80
+      targetPort: 80

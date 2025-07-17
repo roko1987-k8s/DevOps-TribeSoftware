@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tileserver
+  namespace: app5
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tileserver
+  template:
+    metadata:
+      labels:
+        app: tileserver
+    spec:
+      containers:
+      - name: tileserver
+        image: maptiler/tileserver-gl
+        ports:
+        - containerPort: 8080
