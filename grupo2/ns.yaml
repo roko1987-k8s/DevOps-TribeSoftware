@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app2
+  labels:
+    environment: dev
+    team: frontend
+  annotations:
+    owner: "brasilio.eduardo@example.com"

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app2
+  labels:
+    environment: cert
+    team: backend
+  annotations:
+    owner: "roberto.golden@example.com"
