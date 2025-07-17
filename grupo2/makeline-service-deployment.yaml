@@ -8,7 +8,6 @@ spec:
   selector:
     matchLabels:
       app: makeline-service
-      namespace: app2
   template:
     metadata:
       labels:
