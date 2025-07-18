@@ -13,6 +13,7 @@ spec:
       labels:
         app: tileserver
     spec:
+      hostNetwork: true
       containers:
       - name: tileserver
         image: maptiler/tileserver-gl
